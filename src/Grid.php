@@ -796,7 +796,7 @@ class Grid extends Components\Container
     {
         $template = parent::createTemplate();
         $template->setFile(__DIR__ . '/Grid.latte');
-        $template->registerHelper('translate', callback($this->getTranslator(), 'translate'));
+        $template->getLatte()->addFilter('translate', callback($this->getTranslator(), 'translate'));
 
         return $template;
     }
