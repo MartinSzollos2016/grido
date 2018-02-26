@@ -176,8 +176,8 @@ abstract class Editable extends Column
         $th = parent::getHeaderPrototype();
 
         if ($this->isEditable()) {
-	        $th->data('grido-editable-handler', $this->link('editable!'));
-	        $th->data('grido-editableControl-handler', $this->link('editableControl!'));
+            $th->data('grido-editable-handler', $this->link('editable!'));
+            $th->data('grido-editableControl-handler', $this->link('editableControl!'));
         }
 
         return $th;
