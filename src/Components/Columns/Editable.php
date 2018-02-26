@@ -197,9 +197,9 @@ abstract class Editable extends Column
                 $td->class[] = 'editable';
             }
 
-	        $td->data('grido-editable-value', $this->editableValueCallback === null
-		        ? parent::getValue($row)
-		        : callback($this->editableValueCallback)->invokeArgs(array($row, $this)));
+            $td->data('grido-editable-value', $this->editableValueCallback === null
+                ? parent::getValue($row)
+                : callback($this->editableValueCallback)->invokeArgs(array($row, $this)));
         }
 
         return $td;
