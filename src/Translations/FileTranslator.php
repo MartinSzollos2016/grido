@@ -12,7 +12,6 @@
 namespace Grido\Translations;
 
 use Grido\Exception;
-use Nette;
 
 /**
  * Simple file translator.

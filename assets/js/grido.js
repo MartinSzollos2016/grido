@@ -75,7 +75,6 @@
                     that.sendFilterForm();
                 });
 
-
             $('.filter input, .filter textarea', this.$element)
                 .off('focus.grido')
                 .on('focus.grido', function() {

@@ -142,12 +142,12 @@ class ExportTest extends \Tester\TestCase
                     $data = $source->getData();
                     $outData = [];
                     foreach ($data as $item) {
-                        $outData[] = array(
+                        $outData[] = [
                             $item['firstname'],
                             $item['surname'],
                             $item['card'],
                             $item['firstname'] . ',' .$item['surname'],
-                        );
+                        ];
                     }
                     return $outData;
                 });
