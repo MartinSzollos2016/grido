@@ -11,7 +11,7 @@
 
 namespace Grido;
 
-use Nette;
+use Grido\Grid;
 
 /**
  * Customization.
@@ -24,8 +24,7 @@ use Nette;
  */
 class Customization
 {
-
-    use Nette\SmartObject;
+    use \Nette\SmartObject;
 
     const TEMPLATE_DEFAULT = 'default';
     const TEMPLATE_BOOTSTRAP = 'bootstrap';

@@ -12,7 +12,6 @@
 namespace Grido\DataSources;
 
 use Grido\Exception;
-use Nette;
 
 /**
  * Dibi Fluent data source.
@@ -29,7 +28,7 @@ use Nette;
  */
 class DibiFluent  implements IDataSource
 {
-    use Nette\SmartObject;
+    use \Nette\SmartObject;
 
     /** @var \Dibi\Fluent */
     protected $fluent;

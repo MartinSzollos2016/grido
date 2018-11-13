@@ -13,7 +13,6 @@ namespace Grido\DataSources;
 
 use Grido\Exception;
 use Grido\Components\Filters\Condition;
-use Nette;
 
 /**
  * Nette Database data source.
@@ -28,7 +27,7 @@ use Nette;
  */
 class NetteDatabase implements IDataSource
 {
-    use Nette\SmartObject;
+    use \Nette\SmartObject;
 
     /** @var \Nette\Database\Table\Selection */
     protected $selection;

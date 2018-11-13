@@ -12,7 +12,6 @@
 namespace Grido\DataSources;
 
 use Grido\Exception;
-use Nette;
 
 /**
  * Model of data source.
@@ -25,7 +24,7 @@ use Nette;
  */
 class Model
 {
-    use Nette\SmartObject;
+    use \Nette\SmartObject;
 
     /** @var array */
     public $callback = [];
